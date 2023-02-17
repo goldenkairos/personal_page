@@ -1,0 +1,365 @@
+
+/* Shared styles between pages*/
+body{
+    background-color: rgb(14, 49, 53);
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    margin: 50px;
+    color:rgb(190, 241, 247);
+    line-height: 1.8;
+    font-weight: lighter;
+    /* letter-spacing: 1px; */
+    font-size: 20px;    
+}
+h1{
+    margin:20px 0px 0px 4px;
+    font-weight:350;
+    font-size:15px;
+    color: rgb(71, 213, 182);
+}
+
+footer {
+    text-align: center;
+    padding:0px;    
+}
+
+p,h2{
+    margin: 0px 0px 15px
+}
+
+.socialmedia {
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.socialmedia a{
+    color:rgb(56, 175, 188);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.socialmedia a:hover{
+    color:rgb(0, 255, 198);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.navigation a{
+    color:rgb(0, 255, 198);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navigation a:hover{
+    color:rgb(56, 175, 188);
+    opacity: .8;
+    font-weight: 300;   
+}
+
+#copyright {
+    padding-left: 45px;
+    opacity: .5;        
+}
+
+.left{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    bottom:0px;
+    padding:0;
+    height: 500px;
+    margin-top:auto; /*position of social media bar*/
+    left:60px;
+    margin-block-end: 0px;
+    
+}
+
+.left::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 500px; /*height of the line after social media bar is relative to the height of the .left class*/
+    margin: 0px auto;
+    background-color: rgb(56, 175, 188);
+    margin-top:10px;
+    opacity: .8;
+    align-items: center;
+    
+}
+
+.right{
+    display:flex;
+    flex-direction: row;
+    letter-spacing: 0.3rem;
+    writing-mode: vertical-lr;
+    font-size: 15px;
+    font-weight:300;
+    height:520px;
+    position:fixed;
+    bottom:0px;
+    padding:0;
+    right:60px
+}
+
+.right::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 500px; /*height of the line after social media bar is relative to the height of the .left class*/
+    margin: 0px auto;
+    background-color: rgb(56, 175, 188);
+    margin-top:0px;
+    opacity: .8;
+    align-items: center;
+}
+
+
+/* index.html */
+.index-image{
+    height: 310px;
+    width: 400px;
+    opacity: .7;
+    float: right;
+    margin-right: 150px;
+    border-radius: 30px;    
+
+
+    
+    
+}
+.button {
+    background-color: transparent; 
+    border: 1px solid rgb(0, 255, 198);
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom:57px; /* to keep the social media logos in line with 'about' page */
+  }
+
+.button a{
+    color:rgb(0, 255, 198);
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color:rgb(13, 76, 83);
+    opacity: .8;
+      
+}
+
+.myname{
+    color:rgb(206, 243, 247);
+    font-size: 50px;
+    padding-bottom:0;
+    opacity: .8;
+    margin:0;
+}
+
+.intro2{
+    width: 45%;
+    text-align: justify;
+    letter-spacing: .1rem;    
+}
+
+.designedby{
+    margin-top: 40px;
+    margin-right: 20px;
+    text-align: center;
+    }
+
+
+/* about.html */
+.skills{
+    list-style: none;
+    margin-left:-40px;
+}
+
+/* To create space between list items */
+.skills:not(:last-child){
+    margin-bottom: 10px;    
+}
+
+.skills:before{
+    content:"\25B9" ;
+    color:rgb(56, 175, 188);
+    margin-right:10px;
+    font-size: medium;
+    
+}
+
+
+.intro-container {
+    margin:80px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template: 50% 50%/50% 50%;
+    grid-gap: 50px;
+    margin-bottom: 250px;
+    height: 20%;
+    max-width: 100%;
+}
+
+/* portfolio.html */
+.title {
+    color: rgb(190, 241, 247);
+    font-size: 45px;
+    padding:10px;
+    text-align: center;
+}
+
+.standard-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+    padding-left:0px;
+}
+
+.standard-card {
+    background-color: rgb(23, 79, 85);
+    border: 1.5px solid  rgb(23, 79, 85);
+    box-shadow: none;
+    height: 250px;
+    width: 400px;
+    margin: 10px;
+    /* min-height: 100px; */
+    color: rgb(190, 241, 247);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+   
+}
+
+.standard-card:hover{
+    background-color:  rgb(190, 241, 247);
+    color: rgb(25, 73, 79);
+    opacity: .8;
+    font-weight: 600;
+          
+}
+
+.project-description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+
+.content{
+    display:flex;
+    margin-bottom: 190px;
+}
+
+.container{
+    margin-left: 150px;
+    height:500px;
+}
+
+/* Phone and tablet screen */
+@media only screen and (max-width:1271px) and (min-width:300px){
+    .left, .left::after, .right, .right::after, .designedby{
+        display:none
+    }
+    
+    .index-image{
+        display: none;
+    }
+
+    body{
+        font-size: small;
+    }
+
+    .myname{
+        font-size: 40px;
+    }
+.socialmedia {
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.socialmedia a{
+    color:rgb(56, 175, 188);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.socialmedia a:hover{
+    color:rgb(0, 255, 198);
+}
+
+.adj{
+    position: bottom;
+    bottom: 0;
+}
+
+.intro2, .navigation, .adj {
+    height: fit-content;
+    width: 100%;
+    font-size: small;
+    padding:0;
+    /* font-weight: 80px;     */
+    
+}
+
+.standard-card {
+    height: fit-content;
+    width: 100%;
+    font-size: 80%;
+
+}
+.container{
+    margin-left:20px;
+    padding-bottom: 20px;
+    align-items: center;
+    margin-left:0;
+}
+ul, #copyright {
+    padding-inline-start: 0;
+    font-size: small;
+}
+
+.intro-container {
+    display: block;
+    width:100%;
+    justify-content: center;
+    text-align: justify;
+    margin:10px;
+    
+}
+
+.skills{
+    margin-left: 0;
+}
+
+}
+
+/* Laptop screen */
+@media only screen and (min-width: 811px) {
+    .adj{
+        display: none;
+    }
+}
