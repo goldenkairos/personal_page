@@ -168,9 +168,11 @@ p,h2{
 }
 
 .intro2{
-    width: 45%;
-    text-align: justify;
-    letter-spacing: .1rem;    
+    width: 38%;
+    /* text-align: justify; */
+    letter-spacing: .05rem;   
+    font-size: medium; 
+    font-weight: 200;
 }
 
 .designedby{
@@ -210,6 +212,8 @@ p,h2{
     margin-bottom: 250px;
     height: 20%;
     max-width: 100%;
+    font-size: medium;
+    font-weight: 200;
 }
 
 /* portfolio.html */
@@ -242,7 +246,7 @@ p,h2{
     padding: 20px;
     display: inline-block;
     font-weight: 1000;
-    font-size: 20px;
+    font-size: medium;
     letter-spacing: 1.5px;
     border-radius: 5px;
     transition: all .10s;
@@ -263,7 +267,7 @@ p,h2{
     flex-direction: column;
     justify-content: space-between;
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 
